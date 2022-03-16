@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/classes.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src='assets/js/jquery-3.6.0.js' type='text/javascript'></script>
+    <script src='assets/js/main.js' type='text/javascript'></script>
+    <title>Sua Empresa</title>
+</head>
+<body>
+    <input id="close-menu" class="close-menu" 
+    type="checkbox" aria-label="Close Menu" role="Button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu">
+        <div class="main-content menu-content">
+        <h1 onclick="getElementById('close-menu').checked = false;"><a href="index.html">LOGO</a></h1>
+        <nav>
+            <ul onclick="getElementById('close-menu').checked = false;"> 
+                <li><a href="intro.html">Por que nós?</a></li>
+                <li><a href="planos.html">Nossos Planos</a></li>
+                <li><a href="simulacao.html">Simulação</a></li>
+                <li><a href="facaparte.html">Faça parte</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    </aside>
+    <section id="intro-simulacao" class="intro main-bg sessao">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Lorem de</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae inventore, sequi itaque, blanditiis, nisi quos quo beatae ullam nulla fugit. Nisi placeat dignissimos sequi earum tempora, nesciunt ut voluptatibus.</p>
+                <br>
+                    <div class="confira-agora-label">
+                    <button class="confira-agora"><a href="#simulacao">Confira Agora</a></button>
+                    </div>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/Nova pasta/Mulher Sorrindo Mexendo no Celular PNG Transparente Sem Fundo.png" alt="Descrição DETALHADA da imagem">
+            </div>
+        </section>
+
+        <section id="simulacao" class="intro main-bg sessao">
+
+            <div class='opacaoconteiner'>
+                <h3>Contrate de forma rápida e prática.</h3>
+                    <select id="sel" class="selecaodeservico" name="selecao-de-servico" onchange="erase(), exibir()">
+                        <option id="selecione">Selecione um serviço</option>
+                        <option id="emprestimo" value="div1" data-nome="div1">Serviço 1</option>
+                        <option id ="cartadecredito" value="div2" data-nome="div2">Serviço 2</option>
+                        <option id="consorsio" data-nome="div3" value="div3">Serviço 3</option>
+                        <option id="viagens" data-nome="div4" value="div4">Serviço 4</option>
+                        <option id="creditorural" data-nome="div5" value="div5">Serviço 5</option>
+                        <option id="score" data-nome="div6" value="div6">Serviço 6</option>
+                    </select>
+            </div>
+            <div id='pai'>
+            <div class="emprestimoclass contact-form-container"  id='div1'>
+                <div class="contact-form">
+                        <fieldset class="form-grid"> 
+                        <div class="form-group">
+                            <label for="valor-desejado">Qtd Serviço 1</label>
+                            <input type="number" name="valor-desejado" id="valor-desejado" placeholder="Digite a quantidade necessária">
+                        </div>       
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" name="first-name" id="nome" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+                            <input type= "number" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Telefone</label>
+                            <input type="tel" name="tel" id="tel" placeholder= "Digite um telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="valor-desejado">Valor de Entrada (opcional)</label>
+                            <input type="number" name="valor-desejado" id="valor-desejado" placeholder="Digite o valor de crédito desejado">
+                        </div>
+                        <div class="form-group">
+                            <label for="simulare"><br></label>
+                            <button id="simulare">Simular agora!</button>
+                        </div>
+                    </fieldset>
+                </div>   
+                </div>
+                <div class="cartaclass contact-form-container" id='div2'>
+                    <div class="contact-form">
+                            <fieldset class="form-grid">
+                                <div class="form-group">
+                                    <label for="valor-desejado">Qtd Serviço 2</label>
+                                    <input type="number" name="valor-desejado" id="valor-desejado" placeholder="Digite a quantidade necessária">
+                                </div>   
+                                <div class="form-group">
+                                    <label for="first-name">Nome Completo</label>
+                                    <input type="text" name="first-name" id="first-name" placeholder="Digite seu nome completo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cpf">CPF</label>
+                                    <input type= "number" for="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="tel" name="tel" id="tel" placeholder= "Digite um telefone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="entrada">Valor de entrada (opcional)</label>
+                                    <input type="number" name="entrada" id="entrada" placeholder="Digite um valor de entrada"></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="simular"><br></label>
+                                    <button>Simular agora!</button>
+                                </div>
+                        </fieldset>
+                    </div>   
+                </div> 
+                <div class="Consorcioclass contact-form-container" id='div3'>
+                    <div class="contact-form">
+                            <fieldset class="form-grid">
+                            <div class="form-group">
+                                <label for="valor-desejado">Qtd Serviço 3</label>
+                                <input type="number" name="valor-desejado" id="valor-desejado" placeholder="Digite a quantidade necessária">
+                            </div>    
+                            <div class="form-group">
+                                <label for="first-name">Nome Completo</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="Digite seu nome completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input type= "number" for="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" name="tel" id="tel" placeholder= "Digite um telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="entrada">Valor de entrada (opcional)</label>
+                                <input type="number" name="entrada" id="entrada" placeholder="Digite um valor de entrada"></label>
+                            </div>
+                            <div class="form-group">
+                                <label for="simular"><br></label>
+                                <button>Simular agora!</button>
+                            </div>
+                        </fieldset>
+                </div>   
+                </div>       
+                <div class="viagensclass contact-form-container" id='div4'>
+                    <div class="contact-form">
+                            <fieldset class="form-grid">
+                                <div class="form-group">
+                                    <label for="valor-desejado">Qtd Serviço 4</label>
+                                    <input type="number" name="valor-desejado" id="valor-desejado" placeholder="Digite a quantidade necessária">
+                                </div>     
+                                <div class="form-group">
+                                    <label for="first-name">Nome Completo</label>
+                                    <input type="text" name="first-name" id="first-name" placeholder="Digite seu nome completo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cpf">CPF</label>
+                                    <input type= "number" for="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="tel" name="tel" id="tel" placeholder= "Digite um telefone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="entrada">Valor de entrada (opcional)</label>
+                                    <input type="number" name="entrada" id="entrada" placeholder="Digite um valor de entrada"></label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="simular"><br></label>
+                                    <button>Simular agora!</button>
+                                </div>
+                            </fieldset>
+                    </div>   
+                </div>
+                <div class="creditoruralclass contact-form-container" id='div5'>
+                                <div class="contact-form">
+                                <fieldset class="form-grid">
+                                        <div class="form-group">
+                                            <label for="valor-desejado">Qtd Serviço 5</label>
+                                            <input type="number" name="valor-desejado" id="valor-desejado" placeholder="Digite a quantidade necessária">
+                                        </div>     
+                                        <div class="form-group">
+                                            <label for="first-name">Nome Completo</label>
+                                            <input type="text" name="first-name" id="first-name" placeholder="Digite seu nome completo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cpf">CPF</label>
+                                            <input type= "number" for="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="telefone">Telefone</label>
+                                            <input type="tel" name="tel" id="tel" placeholder= "Digite um telefone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="entrada">Valor de entrada (opcional)</label>
+                                            <input type="number" name="entrada" id="entrada" placeholder="Digite um valor de entrada"></label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="simular"><br></label>
+                                            <button>Simular agora!</button>
+                                        </div>
+                                    </fieldset>
+                                </div>   
+                                </div>
+                                <div class="scoreclass contact-form-container" id='div6'>
+                                    <div class="contact-form">
+                                            <fieldset class="form-grid">
+                                            <div class="form-group">
+                                                <label for="valor-desejado">Qtd Serviço 6</label>
+                                                <input type="number" name="valor-desejado" id="valor-desejado" placeholder="Digite a quantidade necessária">
+                                            </div>     
+                                            <div class="form-group">
+                                                <label for="first-name">Nome Completo</label>
+                                                <input type="text" name="first-name" id="first-name" placeholder="Digite seu nome completo">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cpf">CPF</label>
+                                                <input type= "number" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="telefone">Telefone</label>
+                                                <input type="tel" name="tel" id="tel" placeholder= "Digite um telefone">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="entrada">Valor de entrada (opcional)</label>
+                                                <input type="number" name="entrada" id="entrada" placeholder="Digite um valor de entrada"></label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="simular"><br></label>
+                                                <button>Simular agora!</button>
+                                            </div>
+                                        </fieldset>
+                                    </div>   
+                                    </div> 
+            </div>                           
+    </section>
+    
+    
+	
+</body>
+</html>            
